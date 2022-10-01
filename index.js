@@ -1,9 +1,5 @@
-/**
- * @format
- */
-
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import TestAppCom from './src/com/Test/App/TestAppCom';
+import NavIndex from './src/nav'
 
-AppRegistry.registerComponent(appName, () => TestAppCom);
+AppRegistry.registerComponent(appName, () => NavIndex);
