@@ -1,4 +1,4 @@
-type User = {
+type UserType = {
   count: {
     foo: number
   }
@@ -9,5 +9,4 @@ type User = {
   name: string
 }
 
-
-export type {User}
+export type {UserType}

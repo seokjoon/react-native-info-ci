@@ -1,8 +1,10 @@
-import type { User } from './User'
-import inComm from '../helper/inComm'
-import inFaker from '../helper/inFaker'
+import inComm from '../../helper/inComm'
+import inFaker from '../../helper/inFaker'
+import type { UserType } from './UserType'
 
-const UserCreate = (): User => {
+const User = {}
+
+User.create = (): UserType => {
   return {
     count: {
       foo: inComm.random(10, 100)
@@ -15,4 +17,4 @@ const UserCreate = (): User => {
   }
 }
 
-export default UserCreate
+export default User

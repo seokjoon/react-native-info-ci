@@ -1,18 +1,15 @@
 import inComm from '../../../helper/inComm'
-import UserCreate from '../../../type/UserCreate'
-import { SafeAreaView, ScrollView, Text } from 'react-native'
+import { ScrollView } from 'react-native'
+import User from '../../../model/User/User'
+import UserCont from '../../../cont/User/UserCont'
 
-const users = inComm.array(10).map(UserCreate)
+const users = inComm.array(10).map(User.create)
 
-const TestScrollCom: () => Node = () => {
+const TestScrollCom = () => {
 
-  const outs = users.map(user => (<Text key={user.id}>{JSON.stringify(user, null, 2)}</Text>))
+  const outs = users.map(user => (<UserCont key={user.id} user={user} />))
 
-  return (
-    <SafeAreaView>
-      <ScrollView>{outs}</ScrollView>
-    </SafeAreaView>
-  )
+  return <ScrollView>{outs}</ScrollView>
 }
 
 
