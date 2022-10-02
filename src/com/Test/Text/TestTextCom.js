@@ -1,4 +1,4 @@
-import { Alert, Button, Text } from 'react-native'
+import { Text } from 'react-native'
 import User from '../../../model/User/User'
 import BtnTouch from '../../Btn/BtnTouch'
 import InputText from '../../Input/InputText'
