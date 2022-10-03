@@ -4,28 +4,10 @@ import Color from 'color'
 
 
 const ComViewStyle = StyleSheet.create({
-  imgName: {
-    alignSelf: 'center',
-    height: 100,
-    width: 100,
-  },
-
-  imgBg: {
-    flex: 1,
-  },
-
   itemsHor: {
     alignItems: 'center',
     // flexDirection: 'row',
     // justifyContent: 'space-evenly',
-  },
-
-  textAlignCenter: {
-    textAlign: 'center',
-  },
-
-  textBold: {
-    fontWeight: 'bold',
   },
 
   viewChild: {
@@ -46,6 +28,11 @@ const ComViewStyle = StyleSheet.create({
 
   viewRootSafeArea: {
     flex: 1,
+  },
+
+  viewSeparator: {
+    borderColor: Colors.grey600,
+    borderWidth: 1,
   },
 })
 

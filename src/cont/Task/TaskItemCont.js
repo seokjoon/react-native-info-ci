@@ -1,8 +1,12 @@
-import { Text } from 'react-native'
+import { Text, View } from 'react-native'
 
 
 const TaskItemCont = ({task}) => {
-  return <Text>{JSON.stringify(task, null, 2)}</Text>
+  return (
+    <View>
+      <Text>{JSON.stringify(task, null, 2)}</Text>
+    </View>
+  )
 }
 
 

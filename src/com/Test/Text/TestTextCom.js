@@ -4,6 +4,7 @@ import BtnTouch from '../../Btn/BtnTouch'
 import InputText from '../../Input/InputText'
 import inComm from '../../../helper/inComm'
 import ComViewStyle from '../../../style/Com/ComViewStyle'
+import ComTextStyle from '../../../style/Com/ComTextStyle'
 
 
 const TestTextCom = () => {
@@ -20,8 +21,8 @@ const TestTextCom = () => {
     <InputText key='TestTextComInputText' />,
     <BtnTouch key='TestTextComBtnTouch' />,
     <Text key='TestTextComPlatform' style={[
-      ComViewStyle.textBold,
-      ComViewStyle.textAlignCenter,
+      ComTextStyle.textBold,
+      ComTextStyle.textAlignCenter,
     ]}>{inComm.isPlatformIos().toString()}</Text>,
     <Text key='TestTextComDimension'>{JSON.stringify(inComm.getDimension(), null, 2)}</Text>,
   ]
