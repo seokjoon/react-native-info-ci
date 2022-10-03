@@ -1,17 +1,24 @@
 import TestTextCom from '../com/Test/Text/TestTextCom'
-import { SafeAreaView, View } from 'react-native'
-import TestScrollCom from '../com/Test/Scroll/TestScrollCom'
+import { SafeAreaView } from 'react-native'
 import ComViewStyle from '../style/Com/ComViewStyle'
+import ImgCom from '../com/Img/ImgCom'
+import ViewScrollCom from '../com/View/ViewScrollCom'
+import TaskListConst from '../cont/Task/TaskListConst'
 
 const NavIndex: () => Node = () => {
 
+  let outsItems = [
+    <TestTextCom key={1} />,
+    <ImgCom key={2} />,
+    <TaskListConst key={3} />,
+  ]
 
   return (
     <SafeAreaView style={ComViewStyle.viewRootSafeArea}>
-      <View style={ComViewStyle.viewRoot}>
-        <TestTextCom />
-        <TestScrollCom />
-      </View>
+      <ViewScrollCom
+        items={outsItems}
+        style={ComViewStyle.viewRoot}
+      />
     </SafeAreaView>
   )
 }
