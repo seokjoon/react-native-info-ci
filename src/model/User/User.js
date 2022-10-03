@@ -1,4 +1,4 @@
-import inComm from '../../helper/inComm'
+import inTest from '../../helper/inTest'
 import inFaker from '../../helper/inFaker'
 import type { UserType } from './UserType'
 
@@ -7,7 +7,7 @@ const User = {}
 User.create = (): UserType => {
   return {
     count: {
-      foo: inComm.random(10, 100)
+      foo: inTest.random(10, 100)
     },
     email: inFaker.email(),
     id: inFaker.id(),

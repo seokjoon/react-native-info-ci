@@ -1,11 +1,13 @@
+import { Dimensions, Platform } from 'react-native'
+
 const inComm = {
-  array: (length: number) => (new Array(length).fill()),
 
-  img: (width: number, height: number): string => (`https://images.unsplash.com/random/${width}x${height}`),
+  getDimension: () => Dimensions.get('window'),
 
-  imgName: (name: string): string => (`https://ui-avatars.com/api/?name=${name.split(' ').join('+')}`),
+  isPlatformAndroid: () => Platform.OS === 'android',
 
-  random: (min: number, max: number): number => (Math.round(Math.random() * (max - min) + min)),
+  isPlatformIos: () => Platform.OS === 'ios',
 }
+
 
 export default inComm
