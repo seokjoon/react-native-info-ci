@@ -13,10 +13,16 @@ const TestTextCom = () => {
 
   outs = [
     ...outs,
+    <View key='TestTextComItemsHor' style={ComViewStyle.itemsHor}>
+      <Text> a | b | c </Text>
+    </View>,
     <Text key={user.id}>{JSON.stringify(user, null, 2)}</Text>,
     <InputText key='TestTextComInputText' />,
     <BtnTouch key='TestTextComBtnTouch' />,
-    <Text key='TestTextComPlatform'>{inComm.isPlatformIos().toString()}</Text>,
+    <Text key='TestTextComPlatform' style={[
+      ComViewStyle.textBold,
+      ComViewStyle.textAlignCenter,
+    ]}>{inComm.isPlatformIos().toString()}</Text>,
     <Text key='TestTextComDimension'>{JSON.stringify(inComm.getDimension(), null, 2)}</Text>,
   ]
 

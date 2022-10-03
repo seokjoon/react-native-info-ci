@@ -1,9 +1,10 @@
 import TestTextCom from '../com/Test/Text/TestTextCom'
-import { SafeAreaView } from 'react-native'
+import { FlatList, SafeAreaView } from 'react-native'
 import ComViewStyle from '../style/Com/ComViewStyle'
 import ImgCom from '../com/Img/ImgCom'
 import ViewScrollCom from '../com/View/ViewScrollCom'
 import TaskListConst from '../cont/Task/TaskListConst'
+import ViewFlatListCom from '../com/View/ViewFlatListCom'
 
 const NavIndex: () => Node = () => {
 
@@ -19,6 +20,10 @@ const NavIndex: () => Node = () => {
         items={outsItems}
         style={ComViewStyle.viewRoot}
       />
+      {/*<ViewFlatListCom*/}
+      {/*  items={outsItems}*/}
+      {/*  style={ComViewStyle.viewRoot}*/}
+      {/*/>*/}
     </SafeAreaView>
   )
 }

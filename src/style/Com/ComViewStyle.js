@@ -14,6 +14,20 @@ const ComViewStyle = StyleSheet.create({
     flex: 1,
   },
 
+  itemsHor: {
+    alignItems: 'center',
+    // flexDirection: 'row',
+    // justifyContent: 'space-evenly',
+  },
+
+  textAlignCenter: {
+    textAlign: 'center',
+  },
+
+  textBold: {
+    fontWeight: 'bold',
+  },
+
   viewChild: {
     backgroundColor: Color(Colors.grey200).alpha(0.5).lighten(0.5).string(),
     borderColor: Colors.grey400,
