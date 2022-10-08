@@ -1,7 +1,7 @@
 import { Text, View } from 'react-native'
 import User from '../../../model/User/User'
-import BtnTouch from '../../Btn/BtnTouch'
-import InputText from '../../Input/InputText'
+import BtnTouchCom from '../../Btn/BtnTouchCom'
+import InputTextCom from '../../Input/InputTextCom'
 import inComm from '../../../helper/inComm'
 import ComViewStyle from '../../../style/Com/ComViewStyle'
 import ComTextStyle from '../../../style/Com/ComTextStyle'
@@ -18,8 +18,8 @@ const TestTextCom = () => {
       <Text> a | b | c </Text>
     </View>,
     <Text key={user.id}>{JSON.stringify(user, null, 2)}</Text>,
-    <InputText key='TestTextComInputText' />,
-    <BtnTouch key='TestTextComBtnTouch' />,
+    <InputTextCom key='TestTextComInputText' />,
+    <BtnTouchCom key='TestTextComBtnTouch' />,
     <Text key='TestTextComPlatform' style={[
       ComTextStyle.textBold,
       ComTextStyle.textAlignCenter,

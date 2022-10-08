@@ -1,6 +1,6 @@
 import inTest from '../../helper/inTest'
 import User from '../../model/User/User'
-import { FlatList, View } from 'react-native'
+import { FlatList } from 'react-native'
 import TaskItemCont from './TaskItemCont'
 import ComViewStyle from '../../style/Com/ComViewStyle'
 import ViewSeparatorCom from '../../com/View/ViewSeparatorCom'

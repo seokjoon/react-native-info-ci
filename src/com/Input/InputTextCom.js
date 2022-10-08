@@ -1,6 +1,6 @@
 import { TextInput } from 'react-native'
 
-const InputText = ({defaultValue}) => {
+const InputTextCom = ({defaultValue}) => {
 
   let outs = <TextInput
     defaultValue={defaultValue ?? ''}
@@ -17,4 +17,4 @@ const InputText = ({defaultValue}) => {
 }
 
 
-export default InputText
+export default InputTextCom

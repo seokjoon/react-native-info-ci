@@ -2,7 +2,7 @@ import { Alert, Text, TouchableHighlight, TouchableOpacity } from 'react-native'
 import inConst from '../../helper/inConst'
 
 
-const BtnTouch = ({onPress, type}) => {
+const TouchableCom = ({onPress, type}) => {
 
   onPress = onPress ? onPress : onPressDefault
 
@@ -29,4 +29,4 @@ const onPressDefault = () => {
 }
 
 
-export default BtnTouch
+export default TouchableCom
