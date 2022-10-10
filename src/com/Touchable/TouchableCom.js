@@ -1,8 +1,11 @@
 import { Alert, Text, TouchableHighlight, TouchableOpacity } from 'react-native'
 import inConst from '../../helper/inConst'
+import { useCallback } from 'react'
 
 
 const TouchableCom = ({onPress, type}) => {
+
+  const onPressDefault = useCallback(() => { Alert.alert('foo', 'bar') }, [])
 
   onPress = onPress ? onPress : onPressDefault
 
@@ -22,10 +25,6 @@ const TouchableCom = ({onPress, type}) => {
   }
 
   return outs
-}
-
-const onPressDefault = () => {
-  Alert.alert('foo', 'bar')
 }
 
 

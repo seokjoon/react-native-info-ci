@@ -1,9 +1,9 @@
 import { ScrollView } from 'react-native'
 
-const ViewScrollCom = ({items, style}) => {
+const ViewScrollCom = ({horizontal, items, style}) => {
 
   return (
-    <ScrollView style={style ?? ''}>
+    <ScrollView horizontal={(horizontal ?? false)} style={style ?? ''}>
       {items}
     </ScrollView>
   )

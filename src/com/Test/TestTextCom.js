@@ -1,15 +1,18 @@
 import { Text, View } from 'react-native'
-import User from '../../../model/User/User'
-import BtnTouchCom from '../../Btn/BtnTouchCom'
-import InputTextCom from '../../Input/InputTextCom'
-import inComm from '../../../helper/inComm'
-import ComViewStyle from '../../../style/Com/ComViewStyle'
-import ComTextStyle from '../../../style/Com/ComTextStyle'
+import User from '../../model/User/User'
+import InputTextCom from '../Input/InputTextCom'
+import inComm from '../../helper/inComm'
+import ComViewStyle from '../../style/Com/ComViewStyle'
+import ComTextStyle from '../../style/Com/ComTextStyle'
+import TouchableCom from '../Touchable/TouchableCom'
+import { useMemo } from 'react'
 
 
 const TestTextCom = () => {
 
-  let outs = [1, 2].map((v) => <Text key={v}>user {v}</Text>)
+  let outs = useMemo(() => (
+    [1, 2].map((v) => <Text key={v}>user {v}</Text>)
+  ), [])
   const user = User.create()
 
   outs = [
@@ -19,7 +22,7 @@ const TestTextCom = () => {
     </View>,
     <Text key={user.id}>{JSON.stringify(user, null, 2)}</Text>,
     <InputTextCom key='TestTextComInputText' />,
-    <BtnTouchCom key='TestTextComBtnTouch' />,
+    <TouchableCom key='TestTextComTouchable' />,
     <Text key='TestTextComPlatform' style={[
       ComTextStyle.textBold,
       ComTextStyle.textAlignCenter,
